@@ -27,3 +27,21 @@ docker ps -a
 ```shellscript
 docker exec -it ID_CONTAINER bash
 ```
+
+# test go app from shell container
+
+```shellscript
+curl -I http://localhost:3001/
+```
+
+# test python app from shell container
+
+```shellscript
+curl -I http://localhost:81/
+```
+
+# check cron from shell container
+
+```shellscript
+cat /scripts/cronjob.log
+```

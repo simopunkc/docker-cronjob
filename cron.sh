@@ -1,6 +1,5 @@
 #!/bin/sh
-cd /cron
 
 ### replace with command cronjob ###
-python3 app.py
+cd /cronjob && python3 cron.py
 ### replace with command cronjob ###

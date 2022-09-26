@@ -2,6 +2,6 @@
 service cron start
 
 ### replace with command to run app ###
-python3 app.py
-while true; do sleep 1000; done
+cd /app/go && ./go-hello-world &
+cd /app/python && python3 app.py
 ### replace with command to run app ###
