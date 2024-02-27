@@ -14,8 +14,7 @@ RUN pip install -r requirements.txt
 EXPOSE 81
 
 WORKDIR /
-RUN apt-get update
-RUN apt-get -y install cron
+RUN apt-get update && apt-get -y install cron && apt clean
 COPY /cronjob /cronjob
 COPY /startup.sh /scripts/startup.sh
 COPY /cron.sh /scripts/cron.sh
